@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: 'Playfair Display Black', serif;
+      font-size: 34px;
+        }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+    }
+
+    .wrapper{
+      display:grid;
+      /* grid-template-columns:1fr 1fr 1fr;*/
+      grid-template-columns:repeat(3, 1fr);
+      grid-gap:1em;
+      /* grid-auto-rows:100px; */
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-auto-rows: 70px;
+      grid-gap:1em;
+    }
+
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+
+    .nested > div{
+      border:#333 1px solid;
+      padding:1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <h1>No man, I don't eat pork</h1>
+      Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+    </div>
+    <div>
+      <h1>Uuummmm, this is a tasty burger!</h1>
+      Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.    </div>
+
+    <div>
+      <img src="images/Jules copy.jpg"
+      alt="Sammy Jackson as Jules Winfield>"
+    </div>
+    <div>
+      <h1>We happy?</h1>
+          Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+    </div>
+    <div>
+      <h1>Hold on to your butts</h1>
+      My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?    </div>
+    <div>
+      <h1>Are you ready for the truth?</h1>
+      My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?    </div>
+  </div>
+</body>
+</html>
