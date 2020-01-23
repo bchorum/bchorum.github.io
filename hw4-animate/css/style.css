@@ -1,0 +1,17 @@
+.prop-box {
+  width: 400px;
+  margin: 200px;
+  }
+
+#prop {
+  animation: rotation 4s infinite linear;
+  }
+
+@keyframes prop-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
